@@ -17,7 +17,7 @@ namespace LittleTetris{
             gr.Clear(Color.Black);
             gr.DrawRectangle(Pens.Red, k, k, (width - 1) * k, (height - 1) * k);
             for (int i = 0; i < width; i++)
-                for (int j = 0; j < height; j++bh)
+                for (int j = 0; j < height; j++)
                     gr.FillRectangle(Brushes.Green, i * k, j * k, (k - 1) * field[i, j], (k - 1) * field[i, j]);
             for (int i = 0; i < 4; i++)
                 gr.FillRectangle(Brushes.Red, shape[1, i] * k, shape[0, i] * k, k - 1, k - 1);
